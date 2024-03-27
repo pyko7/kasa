@@ -1,10 +1,13 @@
+import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Header.scss";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="header">
-      <img src="/logo.png" alt="logo" />
+      <div className="logo-container">
+        <img src="/logo.png" alt="logo" />
+      </div>
       <Navbar />
     </header>
   );

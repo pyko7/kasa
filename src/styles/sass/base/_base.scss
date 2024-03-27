@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import "../abstracts/variables";
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  color: $neutral-dark-color;
 }

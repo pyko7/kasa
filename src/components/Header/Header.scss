@@ -5,7 +5,16 @@
   width: 100%;
   padding: 1rem;
   @include flex-container($justify: space-between, $align: center);
-  img {
+
+  .logo-container {
     width: 33%;
+    max-width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+
+  @include md-screen {
+    padding: 2rem;
   }
 }

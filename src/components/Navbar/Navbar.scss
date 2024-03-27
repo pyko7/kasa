@@ -1,0 +1,16 @@
+@import "../../styles//sass/abstracts/media-queries";
+@import "../../styles//sass/abstracts/mixins";
+
+.navbar {
+  flex: 1;
+  ul {
+    @include flex-container($justify: flex-end, $align: center);
+    gap: 2rem;
+    li > * {
+      text-decoration: none;
+      &.active-link {
+        text-decoration: underline;
+      }
+    }
+  }
+}
