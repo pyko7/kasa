@@ -1,7 +1,11 @@
-import Header from "./components/Header/Header";
+import MainLayout from "./components/Layouts/MainLayout";
 
 function App() {
-  return <Header />;
+  return (
+    <MainLayout>
+      <div></div>
+    </MainLayout>
+  );
 }
 
 export default App;

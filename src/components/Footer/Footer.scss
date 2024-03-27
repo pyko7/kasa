@@ -1,0 +1,30 @@
+@import "../../styles/sass/abstracts/variables";
+@import "../../styles/sass/abstracts/media-queries";
+@import "../../styles/sass/abstracts/mixins";
+
+.footer {
+  @include flex-container($direction: column, $justify: center, $align: center);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: black;
+
+  .logo-container {
+    width: 33%;
+    max-width: 150px;
+    img {
+      filter: brightness(0) invert(1);
+      width: 100%;
+    }
+  }
+
+  .content {
+    max-width: 50%;
+    font-size: 0.75rem;
+    color: $neutral-light-color;
+    text-align: center;
+  }
+}
