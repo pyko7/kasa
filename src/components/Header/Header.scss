@@ -1,0 +1,11 @@
+@import "../../styles/sass/abstracts/media-queries";
+@import "../../styles/sass/abstracts/mixins";
+
+.header {
+  width: 100%;
+  padding: 1rem;
+  @include flex-container($justify: space-between, $align: center);
+  img {
+    width: 33%;
+  }
+}
