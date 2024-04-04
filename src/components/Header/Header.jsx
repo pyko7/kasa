@@ -2,13 +2,14 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import logo from "../../assets/logo.svg";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-container">
+      <Link to="/" className="logo-container">
         <img src={logo} alt="logo" />
-      </div>
+      </Link>
       <Navbar />
     </header>
   );
