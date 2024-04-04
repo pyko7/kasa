@@ -8,7 +8,7 @@ const MainLayout = ({ children }) => {
     <div className="main-layout">
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
