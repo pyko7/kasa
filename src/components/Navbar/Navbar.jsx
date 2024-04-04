@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import NavbarListItem from "./NavbarListItem";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <NavbarListItem />

@@ -14,7 +14,7 @@ const navListItem = [
   },
 ];
 
-const NavbarListItem: React.FC = () => {
+const NavbarListItem = () => {
   const { pathname } = useLocation();
 
   return (

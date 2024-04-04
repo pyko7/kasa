@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import logo from "../../assets/logo.svg";
 import "./Header.scss";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">

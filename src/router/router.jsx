@@ -7,10 +7,17 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
   },
   {
     path: "/about",
     element: <About />,
   },
+  {
+    path: "*",
+    element: <ErrorPage />,
+  },
+  // {
+  //   path: "/housing/:id",
+  //   element: <Housing />,
+  // },
 ]);
