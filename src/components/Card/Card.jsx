@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./Card.scss";
 const Card = ({ housing }) => {
   return (
-    <div className="card">
+    <Link to={`/housing/${housing.id}`} className="card">
       <img src={housing.cover} />
       <span>{housing.title}</span>
-    </div>
+    </Link>
   );
 };
 
