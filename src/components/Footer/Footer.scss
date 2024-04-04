@@ -1,6 +1,4 @@
-@import "../../styles/sass/abstracts/variables";
-@import "../../styles/sass/abstracts/media-queries";
-@import "../../styles/sass/abstracts/mixins";
+@import "../../styles/style.scss";
 
 .footer {
   @include flex-container($direction: column, $justify: center, $align: center);
