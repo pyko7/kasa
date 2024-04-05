@@ -9,7 +9,11 @@ const bannerTitle = "Chez vous, partout et ailleurs";
 const Home = () => {
   return (
     <div className="container">
-      <Banner title={bannerTitle} backgroundImage={bannerBackgroundImage} />
+      <Banner
+        title={bannerTitle}
+        backgroundImage={bannerBackgroundImage}
+        withFilter
+      />
       <div className="cards_container">
         {housings.map((housing) => (
           <div className="card-container" key={housing.id}>

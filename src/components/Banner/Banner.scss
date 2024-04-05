@@ -22,7 +22,6 @@
     height: 100%;
     border-radius: $border-radius-md;
     object-fit: cover;
-    filter: brightness(0.4);
   }
 
   span {
@@ -38,5 +37,11 @@
       max-width: none;
       font-size: $text-2xl;
     }
+  }
+}
+
+.banner-light-shadow {
+  img {
+    filter: brightness(0.7);
   }
 }
