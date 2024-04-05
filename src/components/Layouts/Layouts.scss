@@ -1,5 +1,12 @@
+@import "../../styles/sass/abstracts/mixins";
+
 .main-layout {
+  @include flex-container(
+    $direction: column,
+    $justify: space-between,
+    $align: center
+  );
   position: relative;
   width: 100%;
-  // min-height: 100vh;
+  min-height: 100vh;
 }
