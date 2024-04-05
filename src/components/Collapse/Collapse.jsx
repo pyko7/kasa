@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import ChevronIcon from "../../assets/icons/chevron-icon.svg";
+import ChevronIcon from "../Icons/ChevronIcon";
 import "./Collapse.scss";
 import Button from "../Button/Button";
 
@@ -20,10 +20,8 @@ const Collapse = ({ title, description = "", list = [] }) => {
       <div className="collapse-header">
         <span>{title}</span>
         <Button handleClick={handleClick}>
-          <img
+          <ChevronIcon
             className={`collapse-icon ${open ? "collapse-icon-open" : ""}`}
-            src={ChevronIcon}
-            alt=""
           />
         </Button>
       </div>
