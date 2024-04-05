@@ -1,13 +1,15 @@
 import Card from "../../components/Card/Card";
 import housings from "../../assets/logements.json";
 import "./Home.scss";
+import Banner from "../../components/Banner/Banner";
+import bannerBackgroundImage from "../../assets/images/source_1.png";
+
+const bannerTitle = "Chez vous, partout et ailleurs";
 
 const Home = () => {
   return (
     <div className="container">
-      <div className="heading_card">
-        <span>Chez vous, partout et ailleurs</span>
-      </div>
+      <Banner title={bannerTitle} backgroundImage={bannerBackgroundImage} />
       <div className="cards_container">
         {housings.map((housing) => (
           <div className="card-container" key={housing.id}>

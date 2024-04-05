@@ -19,52 +19,6 @@
   }
 }
 
-.heading_card {
-  @include flex-container($align: center, $wrap: wrap);
-  position: relative;
-  width: 100%;
-  height: 110px;
-  border-radius: $border-radius-md;
-  background-image: url("../../assets/images/source_1.png");
-  background-size: cover;
-  background-position: center;
-
-  @include md-screen {
-    @include flex-container($justify: center, $align: center);
-    height: 150px;
-  }
-  @include lg-screen {
-    height: 200px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: $border-radius-md;
-    background-color: $neutral-dark-color;
-    opacity: 0.4;
-    z-index: 1;
-  }
-
-  span {
-    position: relative;
-    max-width: 75%;
-    display: block;
-    margin: 1rem;
-    color: $neutral-light-color;
-    font-size: $text-xl;
-    font-weight: 700;
-    z-index: 20;
-    @include md-screen {
-      max-width: none;
-      font-size: $text-2xl;
-    }
-  }
-}
 .cards_container {
   @include flex-container($direction: column, $align: center);
   width: 100%;
