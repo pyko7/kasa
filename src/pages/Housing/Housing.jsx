@@ -26,17 +26,22 @@ const Housing = () => {
             <img src={housing?.cover} alt="" />
           </div>
 
-          <HousingInformations
-            title={housing.title}
-            location={housing.location}
-            tags={housing.tags}
-          />
+          <div className="housing-information-rate-container">
+            <HousingInformations
+              title={housing.title}
+              location={housing.location}
+              tags={housing.tags}
+            />
 
-          <div className="housing-rate-host-container">
-            <HousingRateHost rating={housing.rating} host={housing.host} />
+            <div className="housing-rate-host-container">
+              <HousingRateHost rating={housing.rating} host={housing.host} />
+            </div>
           </div>
-          <Collapse title="Description" description={housing.description} />
-          <Collapse title="Equipements" list={housing.equipments} />
+
+          <div className="housing-collapse-container">
+            <Collapse title="Description" description={housing.description} />
+            <Collapse title="Equipements" list={housing.equipments} />
+          </div>
         </div>
       )}
     </MainLayout>

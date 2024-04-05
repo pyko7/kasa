@@ -6,10 +6,10 @@ const HousingRateHost = ({ rating, host }) => {
     <>
       <div className="housing-rate-container">
         {Array.from(Array(parseInt(rating))).map((el, idx) => (
-          <StarIcon className="housing-rate-active" key={idx} />
+          <StarIcon className="housing-rate housing-rate-active" key={idx} />
         ))}
         {Array.from(Array(5 - parseInt(rating))).map((el, idx) => (
-          <StarIcon key={idx} />
+          <StarIcon className="housing-rate" key={idx} />
         ))}
       </div>
 

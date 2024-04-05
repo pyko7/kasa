@@ -1,6 +1,6 @@
 const HousingInformations = ({ title, location, tags }) => {
   return (
-    <>
+    <div className="housing-information-tag-container">
       <div className="housing-information">
         <span className="housing-information-title">{title}</span>
         <span className="housing-information-location">{location}</span>
@@ -12,7 +12,7 @@ const HousingInformations = ({ title, location, tags }) => {
           </span>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
