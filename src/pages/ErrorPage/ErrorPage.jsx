@@ -9,7 +9,7 @@ import "./ErrorPage.scss";
 const ErrorPage = () => {
   return (
     <MainLayout>
-      <div className="container">
+      <div className="error-container">
         <span className="title">404</span>
         <span className="subtitle">
           Oups! La page que vous demandez n'existe pas.

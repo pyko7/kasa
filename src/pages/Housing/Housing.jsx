@@ -1,6 +1,6 @@
 import MainLayout from "../../components/Layouts/MainLayout";
 import housings from "../../assets/logements.json";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate, redirect } from "react-router-dom";
 import "./Housing.scss";
 import { useEffect, useState } from "react";
 import HousingRateHost from "./HousingRateHost";
@@ -10,11 +10,15 @@ import Collapse from "../../components/Collapse/Collapse";
 const Housing = () => {
   const { pathname } = useLocation();
   const [housing, setHousing] = useState(null);
-
+  const navigate = useNavigate();
   const housingId = pathname.split("/housing/")[1];
 
   useEffect(() => {
     const currentHousing = housings.find((el) => el.id === housingId);
+
+    if (currentHousing === undefined) {
+      return navigate("/error");
+    }
     setHousing(currentHousing);
   }, [housingId]);
 
