@@ -1,0 +1,64 @@
+@import "../../styles/style.scss";
+
+.collapse {
+  width: 100%;
+}
+
+.collapse-header {
+  @include flex-container($justify: space-between, $align: center);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: $main-color;
+  border-radius: $border-radius-sm;
+
+  @include md-screen {
+    padding: 1rem;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  span {
+    display: block;
+    color: $neutral-light-color;
+    font-weight: 700;
+    font-size: $text-sm;
+    @include lg-screen {
+      font-size: $text-base;
+    }
+  }
+}
+
+.collapse-content {
+  height: 0;
+  padding: 1rem;
+  font-size: $text-sm;
+  line-height: 1rem;
+  background-color: $neutral-medium-color;
+  border-radius: $border-radius-sm;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.1s ease-out;
+
+  @include lg-screen {
+    font-size: $text-base;
+    line-height: 1.25rem;
+  }
+
+  &-open {
+    height: fit-content;
+    transform: scaleY(1);
+  }
+}
+
+.collapse-icon {
+  transform: rotate(0);
+  transition: transform 0.25s ease-out;
+
+  &-open {
+    transform: rotate(-180deg);
+  }
+}
