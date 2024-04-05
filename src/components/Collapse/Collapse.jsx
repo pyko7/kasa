@@ -11,14 +11,14 @@ import Button from "../Button/Button";
  * @param {string} props.description - The description of the collapse.
  * @returns {React.ReactNode} A Collapse element with specified properties.
  */
-const Collapse = ({ props }) => {
+const Collapse = ({ title, description = "", list = [] }) => {
   const [open, setOpen] = useState(false);
   const handleClick = useCallback(() => setOpen((open) => !open), []);
 
   return (
     <div className="collapse">
       <div className="collapse-header">
-        <span>{props.title}</span>
+        <span>{title}</span>
         <Button handleClick={handleClick}>
           <img
             className={`collapse-icon ${open ? "collapse-icon-open" : ""}`}
@@ -30,7 +30,12 @@ const Collapse = ({ props }) => {
       <div
         className={`collapse-content ${open ? "collapse-content-open" : ""}`}
       >
-        <p>{props.description}</p>
+        <p>{description}</p>
+        <ul>
+          {list?.map((el, idx) => (
+            <li key={idx}>{el}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

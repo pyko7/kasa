@@ -20,7 +20,11 @@ const About = () => {
         />
         <div className="collapses_container">
           {collapseListElements.map((el) => (
-            <Collapse props={el} key={el.id} />
+            <Collapse
+              title={el.title}
+              description={el.description}
+              key={el.id}
+            />
           ))}
         </div>
       </div>

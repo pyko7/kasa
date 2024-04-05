@@ -52,6 +52,12 @@
     height: fit-content;
     transform: scaleY(1);
   }
+
+  ul {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .collapse-icon {
