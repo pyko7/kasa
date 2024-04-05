@@ -6,8 +6,12 @@
  * @param {function} props.handleClick - The callback function to be invoked when the button is clicked.
  * @returns {React.ReactNode} A button element with specified properties.
  */
-const Button = ({ children, handleClick }) => {
-  return <button onClick={handleClick}>{children}</button>;
+const Button = ({ className = "", children, handleClick }) => {
+  return (
+    <button className={className} onClick={handleClick}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

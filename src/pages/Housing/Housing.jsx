@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import HousingRateHost from "./HousingRateHost";
 import HousingInformations from "./HousingInformations";
 import Collapse from "../../components/Collapse/Collapse";
+import Slideshow from "../../components/Slideshow/Slideshow";
 
 /**
  * @description Represents the page for a single housing component.
@@ -30,9 +31,7 @@ const Housing = () => {
     <MainLayout>
       {housing && (
         <div className="housing">
-          <div className="housing-picture">
-            <img src={housing?.cover} alt="" />
-          </div>
+          <Slideshow pictures={housing.pictures} />
 
           <div className="housing-information-rate-container">
             <HousingInformations
