@@ -1,40 +1,24 @@
 import { useState, useCallback } from "react";
-import ChevronIcon from "../Icons/ChevronIcon";
 import "./Collapse.scss";
-import Button from "../Button/Button";
+import CollapseHeader from "./CollapseHeader";
+import CollapseDescription from "./CollapseDescription";
 
 /**
  * @description Represents a reusable collapse component with a slide transition on vertical axis.
  *
  * @param {Object} props - The properties object for the Collapse component.
  * @param {string} props.title - The title of the collapse.
- * @param {string} props.description - The description of the collapse.
+ * @param {string | Object} props.description - The description of the collapse.
  * @returns {React.ReactNode} A Collapse element with specified properties.
  */
-const Collapse = ({ title, description = "", list = [] }) => {
+const Collapse = ({ title, description = "" }) => {
   const [open, setOpen] = useState(false);
   const handleClick = useCallback(() => setOpen((open) => !open), []);
 
   return (
     <div className="collapse">
-      <div className="collapse-header">
-        <span>{title}</span>
-        <Button handleClick={handleClick}>
-          <ChevronIcon
-            className={`collapse-icon ${open ? "collapse-icon-open" : ""}`}
-          />
-        </Button>
-      </div>
-      <div
-        className={`collapse-content ${open ? "collapse-content-open" : ""}`}
-      >
-        <p>{description}</p>
-        <ul>
-          {list?.map((el, idx) => (
-            <li key={idx}>{el}</li>
-          ))}
-        </ul>
-      </div>
+      <CollapseHeader title={title} handleClick={handleClick} open={open} />
+      <CollapseDescription description={description} open={open} />
     </div>
   );
 };

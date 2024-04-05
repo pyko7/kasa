@@ -44,7 +44,7 @@ const Housing = () => {
 
           <div className="housing-collapse-container">
             <Collapse title="Description" description={housing.description} />
-            <Collapse title="Equipements" list={housing.equipments} />
+            <Collapse title="Equipements" description={housing.equipments} />
           </div>
         </div>
       )}
