@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import navListItem from "./utils";
+import { navListItem } from "./utils";
 
 /**
  * @description Represents a list of items component.
