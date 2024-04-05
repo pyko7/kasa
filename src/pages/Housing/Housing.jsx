@@ -29,7 +29,7 @@ const Housing = () => {
   return (
     <MainLayout>
       {housing && (
-        <div className="container">
+        <div className="housing">
           <div className="housing-picture">
             <img src={housing?.cover} alt="" />
           </div>

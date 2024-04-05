@@ -12,7 +12,7 @@ const bannerTitle = "Chez vous, partout et ailleurs";
  */
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home">
       <Banner
         title={bannerTitle}
         backgroundImage={bannerBackgroundImage}

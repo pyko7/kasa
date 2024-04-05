@@ -1,6 +1,6 @@
 @import "../../styles/style.scss";
 
-.container {
+.about {
   @include flex-container($direction: column, $align: center);
   width: 100%;
   height: 100%;

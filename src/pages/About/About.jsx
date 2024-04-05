@@ -12,7 +12,7 @@ import { collapseListElements } from "./utils";
 const About = () => {
   return (
     <MainLayout>
-      <div className="container">
+      <div className="about">
         <Banner
           title=""
           backgroundImage={bannerBackgroundImage}
