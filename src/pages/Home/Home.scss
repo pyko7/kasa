@@ -35,6 +35,18 @@
     padding: 2rem;
     gap: 2rem;
   }
+  &::after {
+    content: "";
+    width: 100%;
+    max-width: 450px;
+    height: 225px;
+    @include md-screen {
+      width: calc(50% - 2rem);
+    }
+    @include lg-screen {
+      width: calc(33% - 2rem);
+    }
+  }
 }
 
 .card-container {
