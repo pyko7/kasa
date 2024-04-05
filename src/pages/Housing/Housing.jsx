@@ -7,6 +7,10 @@ import HousingRateHost from "./HousingRateHost";
 import HousingInformations from "./HousingInformations";
 import Collapse from "../../components/Collapse/Collapse";
 
+/**
+ * @description Represents the page for a single housing component.
+ * @returns {React.ReactNode} A Housing element.
+ */
 const Housing = () => {
   const { pathname } = useLocation();
   const [housing, setHousing] = useState(null);
