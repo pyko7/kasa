@@ -3,6 +3,14 @@ import ChevronIcon from "../../assets/icons/chevron-icon.svg";
 import "./Collapse.scss";
 import Button from "../Button/Button";
 
+/**
+ * @description Represents a reusable collapse component with a slide transition on vertical axis.
+ *
+ * @param {Object} props - The properties object for the Collapse component.
+ * @param {string} props.title - The title of the collapse.
+ * @param {string} props.description - The description of the collapse.
+ * @returns {React.ReactNode} A Collapse element with specified properties.
+ */
 const Collapse = ({ props }) => {
   const [open, setOpen] = useState(false);
   const handleClick = useCallback(() => setOpen((open) => !open), []);

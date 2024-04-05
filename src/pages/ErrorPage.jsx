@@ -1,3 +1,7 @@
+/**
+ * @description Represents the error page component.
+ * @returns {React.ReactNode} An ErrorPage element.
+ */
 const ErrorPage = () => {
   return (
     <div>

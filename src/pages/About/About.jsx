@@ -5,8 +5,10 @@ import MainLayout from "../../components/Layouts/MainLayout";
 import "./About.scss";
 import { collapseListElements } from "./utils";
 
-console.log(collapseListElements);
-
+/**
+ * @description Represents the about page component.
+ * @returns {React.ReactNode} An About element.
+ */
 const About = () => {
   return (
     <MainLayout>

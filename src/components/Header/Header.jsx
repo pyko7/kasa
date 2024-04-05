@@ -4,6 +4,10 @@ import logo from "../../assets/logo.svg";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 
+/**
+ * @description Represents a reusable header component.
+ * @returns {React.ReactNode} A Header element.
+ */
 const Header = () => {
   return (
     <header className="header">

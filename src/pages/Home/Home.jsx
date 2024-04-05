@@ -6,6 +6,10 @@ import bannerBackgroundImage from "../../assets/images/source_1.png";
 
 const bannerTitle = "Chez vous, partout et ailleurs";
 
+/**
+ * @description Represents the main page component.
+ * @returns {React.ReactNode} An Home element.
+ */
 const Home = () => {
   return (
     <div className="container">

@@ -1,19 +1,11 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import navListItem from "./utils";
 
-const navListItem = [
-  {
-    id: 1,
-    name: "Accueil",
-    url: "/",
-  },
-  {
-    id: 2,
-    name: "À propos",
-    url: "/about",
-  },
-];
-
+/**
+ * @description Represents a list of items component.
+ * @returns {React.ReactNode} A NavbarListItem element.
+ */
 const NavbarListItem = () => {
   const { pathname } = useLocation();
 

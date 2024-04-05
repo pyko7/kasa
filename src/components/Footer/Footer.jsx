@@ -3,6 +3,10 @@ import logo from "../../assets/logo.svg";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 
+/**
+ * @description Represents a reusable footer component.
+ * @returns {React.ReactNode} A Footer element.
+ */
 const Footer = () => {
   return (
     <footer className="footer">
