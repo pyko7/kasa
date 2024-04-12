@@ -34,7 +34,6 @@
 
 .collapse-content {
   height: 0;
-  padding: 1rem;
   font-size: $text-sm;
   line-height: 1rem;
   background-color: $neutral-medium-color;
@@ -50,6 +49,7 @@
 
   &-open {
     height: fit-content;
+    padding: 1rem;
     transform: scaleY(1);
   }
 

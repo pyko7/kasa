@@ -49,7 +49,7 @@
   transform: translateX(-50%);
   color: $neutral-light-color;
   font-size: $text-lg;
-  @include lg-screen {
+  @include md-screen {
     display: block;
   }
 }
